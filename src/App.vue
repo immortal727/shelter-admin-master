@@ -4,7 +4,8 @@
       <router-link to="/add/animal">Добавить животное</router-link> |
       <router-link to="/animals">Список животных</router-link>
     </div>
-    <router-view></router-view>
+    <router-view>
+    </router-view>
   </div>
 </template>
 

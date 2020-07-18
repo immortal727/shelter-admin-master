@@ -31,12 +31,12 @@
             </div>
             <div>
                 <label>Документы:
-                    <input type="checkbox" value="1" v-model="passport">
+                    <input type="checkbox" :value="1" v-model="passport">
                 </label>
             </div>
             <div>
                 <label>Прививки:
-                    <input type="checkbox" value="1" v-model="vaccination">
+                    <input type="checkbox" :value="1" v-model="vaccination">
                 </label>
             </div>
             <input type="submit" value="Добавить">
@@ -69,8 +69,8 @@
                 formData.append('animal_name', this.animal_name);
                 formData.append('description', this.description);
                 formData.append('age', this.age);
-                formData.append('passport', this.passport);
-                formData.append('vaccitacion', this.vaccination);
+                formData.append('passport', +this.passport);
+                formData.append('vaccitacion', +this.vaccination);
                 formData.append('id_category', this.id_category);
 
                 axios
