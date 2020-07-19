@@ -70,7 +70,7 @@
                 formData.append('description', this.description);
                 formData.append('age', this.age);
                 formData.append('passport', +this.passport);
-                formData.append('vaccitacion', +this.vaccination);
+                formData.append('vaccination', +this.vaccination);
                 formData.append('id_category', this.id_category);
 
                 axios
